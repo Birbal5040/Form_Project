@@ -1,0 +1,20 @@
+div{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 5px dotted black;
+    margin: 3px;
+
+  }
+#first
+{
+position: absolute;
+top: 40%;
+left: 30%;
+
+}
+#second{
+position: relative;
+top: 35%;
+bottom: 40%;
+}

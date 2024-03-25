@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Figure</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .love-figure {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite alternate;
+    }
+
+    .colorful-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background-color: #ffcc00;
+        border-radius: 50%;
+        animation: rotateColors 4s linear infinite;
+    }
+
+    .love-text {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.2); }
+    }
+
+    @keyframes rotateColors {
+        0% { background-color: #ffcc00; }
+        25% { background-color: #99ccff; }
+        50% { background-color: #ff66b2; }
+        75% { background-color: #66ff99; }
+        100% { background-color: #ffcc00; }
+    }
+</style>
+</head>
+<body>
+<div class="love-figure">
+    <div class="colorful-circle"></div>
+    <div class="heart"></div>
+</div>
+<div class="love-text">Spread Love!</div>
+</body>
+</html>
