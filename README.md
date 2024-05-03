@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT FORM</title>
     <style>
+        //this is css
         #re{
           
            background-color: red;
